@@ -1,0 +1,48 @@
+PrecisionCBCTSim 专有软件许可声明
+=====================================
+
+Copyright (c) 2026 PrecisionCBCTSim Project. All rights reserved.
+版权所有 (c) 2026 PrecisionCBCTSim 项目。保留一切权利。
+
+1. 权利归属
+   本软件（含源代码、目标代码、界面设计、文档及算法实现）为 PrecisionCBCTSim
+   项目的专有财产，受著作权法及国际著作权条约保护。
+
+2. 许可范围
+   未经权利人书面授权，任何个人或组织不得：
+   （a）复制、分发、公开传播本软件或其任何部分；
+   （b）修改、翻译、反向工程、反编译或反汇编本软件（适用法律强制允许的除外）；
+   （c）将本软件或其衍生作品用于商业用途；
+   （d）移除或更改本软件中的任何版权、商标或其他权利声明。
+
+   权利人可向被授权方授予单独的书面许可，具体权限以书面许可协议为准。
+
+3. 第三方组件
+   本软件动态链接 Qt 6（LGPLv3）并使用 VTK 9（BSD-3-Clause）。这些组件仍受其自身
+   许可证约束，不因本声明而改变。详见 THIRD_PARTY_NOTICES.txt。
+
+4. 免责声明
+   本软件按"现状"提供，不附带任何明示或默示的担保，包括但不限于适销性、特定用途
+   适用性和不侵权的担保。在任何情况下，权利人不对因使用本软件而产生的任何直接、
+   间接、偶然、特殊或后果性损害承担责任。
+
+-------------------------------------------------------------------------------
+Proprietary License Notice (English)
+
+Copyright (c) 2026 PrecisionCBCTSim Project. All rights reserved.
+
+This software, including all source code, object code, user interface designs,
+documentation and algorithms, is proprietary and confidential. No part of it may
+be copied, distributed, published, modified, reverse engineered, or used for
+commercial purposes without prior written permission from the copyright holder,
+except as expressly permitted by applicable law.
+
+This software dynamically links against Qt 6 (LGPLv3) and uses VTK 9
+(BSD-3-Clause). Those components remain governed by their own licenses; see
+THIRD_PARTY_NOTICES.txt.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT
+HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM, OUT OF
+OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

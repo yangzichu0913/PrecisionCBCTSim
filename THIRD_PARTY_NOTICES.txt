@@ -1,0 +1,90 @@
+﻿PrecisionCBCTSim — 第三方组件声明 / THIRD-PARTY NOTICES
+=========================================================
+
+本软件（PrecisionCBCTSim）为专有软件，源码不公开。以下第三方组件按其自身许可证
+随软件一同使用或分发。分发本软件的可执行文件时，必须保留本文件及相应许可证文本。
+
+分发清单
+--------
+1. Qt 6 — GNU Lesser General Public License v3 (LGPLv3)
+2. VTK 9 — BSD 3-Clause License
+3. Manifold — Apache License 2.0（静态链接）
+4. linalg.h（随 Manifold 的公共头文件）— Public Domain / CC0
+5. NVIDIA CUDA Runtime（Phase 3 起）— NVIDIA CUDA Toolkit EULA（专有）
+
+-----------------------------------------------------------------
+1. Qt 6 (https://www.qt.io) — LGPLv3
+-----------------------------------------------------------------
+本软件通过 **动态链接** 方式使用 Qt 6（Qt6Core.dll、Qt6Gui.dll、Qt6Widgets.dll 等），
+遵守 LGPLv3 的下列要求：
+
+- 仅动态链接 Qt 动态库（.dll），不静态链接、不修改 Qt 源码；
+- 随发行包提供所用 Qt 版本的许可证全文与版权声明；
+- 允许最终用户用其自行编译的、接口兼容的 Qt 版本替换发行包中的 Qt 动态库；
+- 发行包内提供获取对应 Qt 源码的说明（Qt 开源版可从 https://download.qt.io 获取）。
+
+Qt 许可证全文见发行包中的 licenses/LGPLv3.txt（或 https://www.gnu.org/licenses/lgpl-3.0.html）。
+
+-----------------------------------------------------------------
+2. VTK 9 (https://vtk.org) — BSD 3-Clause
+-----------------------------------------------------------------
+Copyright (c) 1993-2026 Kitware, Inc. and contributors. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+  * Redistributions of source code must retain the above copyright notice,
+    this list of conditions and the following disclaimer.
+  * Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation
+    and/or other materials provided with the distribution.
+  * Neither the name of Kitware, Inc. nor the names of its contributors may be
+    used to endorse or promote products derived from this software without
+    specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+-----------------------------------------------------------------
+3. Manifold (https://github.com/elalish/manifold) — Apache License 2.0
+-----------------------------------------------------------------
+Copyright (c) 2024 Emmett Lalish and contributors.
+
+本软件用 Manifold 做三角形网格的布尔运算（多部件并集、内腔差集）与流形性校验，
+以 **静态库** 方式链接（manifold.lib）。未修改其源码。
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+本项目关闭了 Manifold 的可选项 MANIFOLD_CROSS_SECTION，因此 **未链接** 其 2D
+CrossSection 后端 Clipper2；也未启用 TBB 并行后端。
+
+-----------------------------------------------------------------
+4. linalg.h (https://github.com/sgorsten/linalg) — Public Domain / CC0
+-----------------------------------------------------------------
+Manifold 的公共头文件通过 `manifold/linalg.h` 暴露该仅头文件的线性代数库，
+本软件在编译时会包含它。作者声明其为 public domain。
+
+-----------------------------------------------------------------
+5. NVIDIA CUDA Runtime（Phase 3 起）
+-----------------------------------------------------------------
+仅随发行包分发 CUDA 运行时库（cudart 等），不修改、不逆向；使用受 NVIDIA CUDA
+Toolkit 最终用户许可协议约束（https://docs.nvidia.com/cuda/eula/）。

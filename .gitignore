@@ -1,0 +1,25 @@
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+# CMake / 构建产物
+build/
+out/
+dist/
+CMakeUserPresets.json
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+
+# MSVC
+.vs/
+*.user
+
+# 工具日志
+aqtinstall.log
